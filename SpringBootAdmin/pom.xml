@@ -5,11 +5,11 @@
   <groupId>SpringBootAdmin</groupId>
   <artifactId>SpringBootAdmin</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
+  
 
   <name>SpringBootAdmin</name>
   <url>http://maven.apache.org</url>
-
+ 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -38,7 +38,14 @@
 	    <version>2.0.5</version>
 	</dependency>
    <!-- 监控管理服务端 END-->  
-
   </dependencies>
+    <build>
+    <plugins>
+      <plugin>                                              
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 </project>
 
